@@ -1,0 +1,27 @@
+{
+  "name": "shadow-reagent",
+  "version": "0.0.1",
+  "description": "Template for shadow-cljs and reagent projects",
+  "repository": "https://github.com/jacekschae/shadow-reagent",
+  "author": "Jacek Schae <jacek.schae@gmail.com>",
+  "license": "EPL-2.0",
+  "scripts": {
+    "dev": "shadow-cljs watch app;",
+    "release": "shadow-cljs release app;",
+    "server": "shadow-cljs server;",
+    "clean": "rm -rf target; rm -rf public/js"
+  },
+  "dependencies": {
+    "@firebase/app": "^0.3.4",
+    "@firebase/auth": "^0.7.7",
+    "@firebase/database": "^0.3.6",
+    "@firebase/firestore": "^0.8.3",
+    "create-react-class": "^15.6.3",
+    "react": "^16.3.2",
+    "react-dom": "^16.3.2"
+  },
+  "devDependencies": {
+    "shadow-cljs": "^2.4.13"
+  },
+  "main": "index.js"
+}
