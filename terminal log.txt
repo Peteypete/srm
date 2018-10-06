@@ -1,0 +1,949 @@
+Last login: Fri Oct  5 08:43:02 on ttys002
+cd ~/OneDrive/GitHubShared
+/Users/peterwen/.zshrc:export:113: not valid in this context: -w
+------------------------------------------------------------
+~/Documents/GitHub » cd ~/OneDrive/GitHubShared            peterwen@Peters-iMac
+------------------------------------------------------------
+~/OneDrive/GitHubShared » cd shadow-reagent-master         peterwen@Peters-iMac
+------------------------------------------------------------
+~/OneDrive/GitHubShared/shadow-reagent-master » atom .     peterwen@Peters-iMac
+------------------------------------------------------------
+~/OneDrive/GitHubShared/shadow-reagent-master » yarn install
+yarn install v1.10.1
+[1/4] 🔍  Resolving packages...
+[2/4] 🚚  Fetching packages...
+[3/4] 🔗  Linking dependencies...
+[4/4] 📃  Building fresh packages...
+
+success Saved lockfile.
+✨  Done in 12.75s.
+------------------------------------------------------------
+~/OneDrive/GitHubShared/shadow-reagent-master » yarn dev   peterwen@Peters-iMac
+yarn run v1.10.1
+$ shadow-cljs watch app;
+shadow-cljs - config: /Users/peterwen/OneDrive/GitHubShared/shadow-reagent-master/shadow-cljs.edn  cli version: 2.4.13  node: v10.11.0
+shadow-cljs - updating dependencies
+shadow-cljs - dependencies updated
+shadow-cljs - starting ...
+shadow-cljs - HTTP server for :app available at http://localhost:3000
+shadow-cljs - server version: 2.4.13
+shadow-cljs - server running at http://localhost:9630
+shadow-cljs - socket REPL running on port 58903
+shadow-cljs - nREPL server started on port 3333
+shadow-cljs - watching build :app
+[:app] Configuring build.
+[:app] Compiling ...
+[:app] Build completed. (195 files, 93 compiled, 0 warnings, 23.50s)
+JS runtime connected.
+^C
+shutting down ...
+JS runtime disconnected.
+------------------------------------------------------------
+~/OneDrive/GitHubShared/shadow-reagent-master » Worker shutdown.wen@Peters-iMac
+shutdown complete.
+
+------------------------------------------------------------
+~/OneDrive/GitHubShared/shadow-reagent-master » firebase init
+
+     🔥🔥🔥🔥🔥🔥🔥🔥 🔥🔥🔥🔥 🔥🔥🔥🔥🔥🔥🔥🔥  🔥🔥🔥🔥🔥🔥🔥🔥 🔥🔥🔥🔥🔥🔥🔥🔥     🔥🔥🔥     🔥🔥🔥🔥🔥🔥  🔥🔥🔥🔥🔥🔥🔥🔥
+     🔥🔥        🔥🔥  🔥🔥     🔥🔥 🔥🔥       🔥🔥     🔥🔥  🔥🔥   🔥🔥  🔥🔥       🔥🔥
+     🔥🔥🔥🔥🔥🔥    🔥🔥  🔥🔥🔥🔥🔥🔥🔥🔥  🔥🔥🔥🔥🔥🔥   🔥🔥🔥🔥🔥🔥🔥🔥  🔥🔥🔥🔥🔥🔥🔥🔥🔥  🔥🔥🔥🔥🔥🔥  🔥🔥🔥🔥🔥🔥
+     🔥🔥        🔥🔥  🔥🔥    🔥🔥  🔥🔥       🔥🔥     🔥🔥 🔥🔥     🔥🔥       🔥🔥 🔥🔥
+     🔥🔥       🔥🔥🔥🔥 🔥🔥     🔥🔥 🔥🔥🔥🔥🔥🔥🔥🔥 🔥🔥🔥🔥🔥🔥🔥🔥  🔥🔥     🔥🔥  🔥🔥🔥🔥🔥🔥  🔥🔥🔥🔥🔥🔥🔥🔥
+
+You're about to initialize a Firebase project in this directory:
+
+  /Users/peterwen/OneDrive/GitHubShared/shadow-reagent-master
+
+? Which Firebase CLI features do you want to setup for this folder? Press Space
+to select features, then Enter to confirm your choices. Hosting: Configure and d
+eploy Firebase Hosting sites
+
+=== Project Setup
+
+First, let's associate this project directory with a Firebase project.
+You can create multiple project aliases by running firebase use --add,
+but for now we'll just set up a default project.
+
+? Select a default Firebase project for this directory: shadow-reagent (fir-test
+-ae558)
+
+=== Hosting Setup
+
+Your public directory is the folder (relative to your project directory) that
+will contain Hosting assets to be uploaded with firebase deploy. If you
+have a build process for your assets, use your build's output directory.
+
+? What do you want to use as your public directory? public
+? Configure as a single-page app (rewrite all urls to /index.html)? No
+✔  Wrote public/404.html
+? File public/index.html already exists. Overwrite? No
+i  Skipping write of public/index.html
+
+i  Writing configuration info to firebase.json...
+i  Writing project information to .firebaserc...
+
+✔  Firebase initialization complete!
+------------------------------------------------------------
+~/OneDrive/GitHubShared/shadow-reagent-master » git init   peterwen@Peters-iMac
+Initialized empty Git repository in /Users/peterwen/OneDrive/GitHubShared/shadow-reagent-master/.git/
+------------------------------------------------------------
+~/OneDrive/GitHubShared/shadow-reagent-master(master*) » firebase deploy
+
+=== Deploying to 'fir-test-ae558'...
+
+i  deploying hosting
+i  hosting[fir-test-ae558]: beginning deploy...
+i  hosting[fir-test-ae558]: found 292 files in public
+✔  hosting[fir-test-ae558]: file upload complete
+i  hosting[fir-test-ae558]: finalizing version...
+✔  hosting[fir-test-ae558]: version finalized
+i  hosting[fir-test-ae558]: releasing new version...
+✔  hosting[fir-test-ae558]: release complete
+
+✔  Deploy complete!
+
+Project Console: https://console.firebase.google.com/project/fir-test-ae558/overview
+Hosting URL: https://fir-test-ae558.firebaseapp.com
+------------------------------------------------------------
+~/OneDrive/GitHubShared/shadow-reagent-master(master*) » yarn release
+yarn run v1.10.1
+$ shadow-cljs release app;
+shadow-cljs - config: /Users/peterwen/OneDrive/GitHubShared/shadow-reagent-master/shadow-cljs.edn  cli version: 2.4.13  node: v10.11.0
+shadow-cljs - starting ...
+[:app] Compiling ...
+[:app] Build completed. (53 files, 33 compiled, 0 warnings, 18.05s)
+✨  Done in 32.60s.
+------------------------------------------------------------
+~/OneDrive/GitHubShared/shadow-reagent-master(master*) » firebase deploy
+
+=== Deploying to 'fir-test-ae558'...
+
+i  deploying hosting
+i  hosting[fir-test-ae558]: beginning deploy...
+i  hosting[fir-test-ae558]: found 292 files in public
+✔  hosting[fir-test-ae558]: file upload complete
+i  hosting[fir-test-ae558]: finalizing version...
+✔  hosting[fir-test-ae558]: version finalized
+i  hosting[fir-test-ae558]: releasing new version...
+✔  hosting[fir-test-ae558]: release complete
+
+✔  Deploy complete!
+
+Project Console: https://console.firebase.google.com/project/fir-test-ae558/overview
+Hosting URL: https://fir-test-ae558.firebaseapp.com
+------------------------------------------------------------
+~/OneDrive/GitHubShared/shadow-reagent-master(master*) » yarn dev
+yarn run v1.10.1
+$ shadow-cljs watch app;
+shadow-cljs - config: /Users/peterwen/OneDrive/GitHubShared/shadow-reagent-master/shadow-cljs.edn  cli version: 2.4.13  node: v10.11.0
+shadow-cljs - updating dependencies
+shadow-cljs - dependencies updated
+shadow-cljs - starting ...
+shadow-cljs - HTTP server for :app available at http://localhost:3000
+shadow-cljs - server version: 2.4.13
+shadow-cljs - server running at http://localhost:9630
+shadow-cljs - socket REPL running on port 62563
+shadow-cljs - nREPL server started on port 3333
+shadow-cljs - watching build :app
+[:app] Configuring build.
+[:app] Compiling ...
+[:app] Build failure:
+The required JS dependency "@firebase/app" is not available, it was required by "firebase/app.cljs".
+
+Searched in:/Users/peterwen/OneDrive/GitHubShared/shadow-reagent-master/node_modules
+
+You probably need to run:
+  npm install @firebase/app
+
+See: https://shadow-cljs.github.io/docs/UsersGuide.html#npm-install
+
+^X^C
+shutting down ...
+------------------------------------------------------------
+~/OneDrive/GitHubShared/shadow-reagent-master(master*) » Worker shutdown.s-iMac
+shutdown complete.
+
+------------------------------------------------------------
+~/OneDrive/GitHubShared/shadow-reagent-master(master*) » yarn init
+yarn init v1.10.1
+question name (shadow-reagent):
+question version (0.0.1):
+question description (Template for shadow-cljs and reagent projects):
+question entry point (index.js):
+question repository url (https://github.com/jacekschae/shadow-reagent):
+question author (Jacek Schae <jacek.schae@gmail.com>):
+question license (EPL-2.0):
+question private:
+success Saved package.json
+✨  Done in 15.71s.
+------------------------------------------------------------
+~/OneDrive/GitHubShared/shadow-reagent-master(master*) » yarn dev
+yarn run v1.10.1
+$ shadow-cljs watch app;
+shadow-cljs - config: /Users/peterwen/OneDrive/GitHubShared/shadow-reagent-master/shadow-cljs.edn  cli version: 2.4.13  node: v10.11.0
+shadow-cljs - starting ...
+shadow-cljs - HTTP server for :app available at http://localhost:3000
+shadow-cljs - server version: 2.4.13
+shadow-cljs - server running at http://localhost:9630
+shadow-cljs - socket REPL running on port 63399
+shadow-cljs - nREPL server started on port 3333
+shadow-cljs - watching build :app
+[:app] Configuring build.
+[:app] Compiling ...
+[:app] Build failure:
+The required JS dependency "@firebase/app" is not available, it was required by "firebase/app.cljs".
+
+Searched in:/Users/peterwen/OneDrive/GitHubShared/shadow-reagent-master/node_modules
+
+You probably need to run:
+  npm install @firebase/app
+
+See: https://shadow-cljs.github.io/docs/UsersGuide.html#npm-install
+
+^Cshutting down ...
+
+------------------------------------------------------------
+~/OneDrive/GitHubShared/shadow-reagent-master(master*) » Worker shutdown.s-iMac
+shutdown complete.
+
+------------------------------------------------------------
+~/OneDrive/GitHubShared/shadow-reagent-master(master*) » npm install @firebase/app
+npm WARN deprecated browserslist@2.11.3: Browserslist 2 could fail on reading Browserslist >3.0 config used in other tools.
+npm notice created a lockfile as package-lock.json. You should commit this file.
+npm WARN shadow-reagent@0.0.1 scripts['server'] should probably be scripts['start'].
+
++ @firebase/app@0.3.4
+added 10 packages from 6 contributors, removed 1 package, updated 195 packages and audited 2718 packages in 16.682s
+found 0 vulnerabilities
+
+------------------------------------------------------------
+~/OneDrive/GitHubShared/shadow-reagent-master(master*) » yarn dev
+yarn run v1.10.1
+$ shadow-cljs watch app;
+shadow-cljs - config: /Users/peterwen/OneDrive/GitHubShared/shadow-reagent-master/shadow-cljs.edn  cli version: 2.4.13  node: v10.11.0
+shadow-cljs - starting ...
+shadow-cljs - HTTP server for :app available at http://localhost:3000
+shadow-cljs - server version: 2.4.13
+shadow-cljs - server running at http://localhost:9630
+shadow-cljs - socket REPL running on port 63747
+shadow-cljs - nREPL server started on port 3333
+shadow-cljs - watching build :app
+[:app] Configuring build.
+[:app] Compiling ...
+[:app] Build failure:
+The required JS dependency "@firebase/auth" is not available, it was required by "firebase/auth.cljs".
+
+Searched in:/Users/peterwen/OneDrive/GitHubShared/shadow-reagent-master/node_modules
+
+You probably need to run:
+  npm install @firebase/auth
+
+See: https://shadow-cljs.github.io/docs/UsersGuide.html#npm-install
+
+^Cshutting down ...
+
+------------------------------------------------------------
+~/OneDrive/GitHubShared/shadow-reagent-master(master*) » Worker shutdown.s-iMac
+shutdown complete.                                         peterwen@Peters-iMac
+------------------------------------------------------------
+~/OneDrive/GitHubShared/shadow-reagent-master(master*) »   npm install @firebase/auth
+npm WARN deprecated react-dom@16.3.2: This version of react-dom/server contains a minor vulnerability. Please update react-dom to 16.3.3 or 16.4.2+. Learn more: https://fb.me/cve-2018-6341
+npm WARN shadow-reagent@0.0.1 scripts['server'] should probably be scripts['start'].
+
++ @firebase/auth@0.7.7
+added 2 packages from 1 contributor, updated 4 packages and audited 2720 packages in 2.836s
+found 0 vulnerabilities
+
+------------------------------------------------------------
+~/OneDrive/GitHubShared/shadow-reagent-master(master*) » yarn dev
+yarn run v1.10.1
+$ shadow-cljs watch app;
+shadow-cljs - config: /Users/peterwen/OneDrive/GitHubShared/shadow-reagent-master/shadow-cljs.edn  cli version: 2.4.13  node: v10.11.0
+shadow-cljs - starting ...
+shadow-cljs - HTTP server for :app available at http://localhost:3000
+shadow-cljs - server version: 2.4.13
+shadow-cljs - server running at http://localhost:9630
+shadow-cljs - socket REPL running on port 63991
+shadow-cljs - nREPL server started on port 3333
+shadow-cljs - watching build :app
+[:app] Configuring build.
+[:app] Compiling ...
+[:app] Build failure:
+The required JS dependency "@firebase/database" is not available, it was required by "firebase/database.cljs".
+
+Searched in:/Users/peterwen/OneDrive/GitHubShared/shadow-reagent-master/node_modules
+
+You probably need to run:
+  npm install @firebase/database
+
+See: https://shadow-cljs.github.io/docs/UsersGuide.html#npm-install
+
+^[[A^Cshutting down ...
+
+------------------------------------------------------------
+~/OneDrive/GitHubShared/shadow-reagent-master(master*) » Worker shutdown.s-iMac
+shutdown complete.
+⸨░░░░░░░░░░░░░░░░░░⸩ ⠧ rollbackFailedOptional: verb npm-session 588835aa7582ab9
+npm ERR! code EINVALIDTAGNAME
+npm ERR! Invalid tag name "@f": Tags may not have any characters that encodeURIComponent encodes.
+
+npm ERR! A complete log of this run can be found in:
+npm ERR!     /Users/peterwen/.npm/_logs/2018-10-06T00_53_50_523Z-debug.log
+------------------------------------------------------------
+~/OneDrive/GitHubShared/shadow-reagent-master(master*) »   peterwen@Peters-iMac
+------------------------------------------------------------
+~/OneDrive/GitHubShared/shadow-reagent-master(master*) »  npm install @firebase/database
+npm WARN shadow-reagent@0.0.1 scripts['server'] should probably be scripts['start'].
+
++ @firebase/database@0.3.6
+added 7 packages from 7 contributors and audited 2730 packages in 2.869s
+found 0 vulnerabilities
+
+------------------------------------------------------------
+~/OneDrive/GitHubShared/shadow-reagent-master(master*) » yarn dev
+yarn run v1.10.1
+$ shadow-cljs watch app;
+shadow-cljs - config: /Users/peterwen/OneDrive/GitHubShared/shadow-reagent-master/shadow-cljs.edn  cli version: 2.4.13  node: v10.11.0
+shadow-cljs - starting ...
+shadow-cljs - HTTP server for :app available at http://localhost:3000
+shadow-cljs - server version: 2.4.13
+shadow-cljs - server running at http://localhost:9630
+shadow-cljs - socket REPL running on port 64189
+shadow-cljs - nREPL server started on port 3333
+shadow-cljs - watching build :app
+[:app] Configuring build.
+[:app] Compiling ...
+[:app] Build failure:
+The required JS dependency "@firebase/firestore" is not available, it was required by "firebase/firestore.cljs".
+
+Searched in:/Users/peterwen/OneDrive/GitHubShared/shadow-reagent-master/node_modules
+
+You probably need to run:
+  npm install @firebase/firestore
+
+See: https://shadow-cljs.github.io/docs/UsersGuide.html#npm-install
+
+^Cshutting down ...
+
+------------------------------------------------------------
+~/OneDrive/GitHubShared/shadow-reagent-master(master*) » Worker shutdown.s-iMac
+shutdown complete.
+
+------------------------------------------------------------
+~/OneDrive/GitHubShared/shadow-reagent-master(master*) »  npm install @firebase/firestore
+
+
+> grpc@1.13.1 install /Users/peterwen/OneDrive/GitHubShared/shadow-reagent-master/node_modules/grpc
+> node-pre-gyp install --fallback-to-build --library=static_library
+
+node-pre-gyp WARN Using needle for node-pre-gyp https download
+[grpc] Success: "/Users/peterwen/OneDrive/GitHubShared/shadow-reagent-master/node_modules/grpc/src/node/extension_binary/node-v64-darwin-x64-unknown/grpc_node.node" is installed via remote
+npm WARN shadow-reagent@0.0.1 scripts['server'] should probably be scripts['start'].
+
++ @firebase/firestore@0.8.3
+added 95 packages from 47 contributors and audited 2885 packages in 8.077s
+found 0 vulnerabilities
+
+------------------------------------------------------------
+~/OneDrive/GitHubShared/shadow-reagent-master(master*) » yarn dev
+yarn run v1.10.1
+$ shadow-cljs watch app;
+shadow-cljs - config: /Users/peterwen/OneDrive/GitHubShared/shadow-reagent-master/shadow-cljs.edn  cli version: 2.4.13  node: v10.11.0
+shadow-cljs - starting ...
+shadow-cljs - HTTP server for :app available at http://localhost:3000
+shadow-cljs - server version: 2.4.13
+shadow-cljs - server running at http://localhost:9630
+shadow-cljs - socket REPL running on port 64408
+shadow-cljs - nREPL server started on port 3333
+shadow-cljs - watching build :app
+[:app] Configuring build.
+[:app] Compiling ...
+[:app] Build completed. (237 files, 74 compiled, 0 warnings, 15.85s)
+JS runtime connected.
+^Cshutting down ...
+
+JS runtime disconnected.
+------------------------------------------------------------
+~/OneDrive/GitHubShared/shadow-reagent-master(master*) » Worker shutdown.s-iMac
+shutting down ...
+shutdown complete.
+shutdown complete.
+
+------------------------------------------------------------
+~/OneDrive/GitHubShared/shadow-reagent-master(master*) » firebase deploy
+
+=== Deploying to 'fir-test-ae558'...
+
+i  deploying hosting
+i  hosting[fir-test-ae558]: beginning deploy...
+i  hosting[fir-test-ae558]: found 376 files in public
+✔  hosting[fir-test-ae558]: file upload complete
+i  hosting[fir-test-ae558]: finalizing version...
+✔  hosting[fir-test-ae558]: version finalized
+i  hosting[fir-test-ae558]: releasing new version...
+✔  hosting[fir-test-ae558]: release complete
+
+✔  Deploy complete!
+
+Project Console: https://console.firebase.google.com/project/fir-test-ae558/overview
+Hosting URL: https://fir-test-ae558.firebaseapp.com
+------------------------------------------------------------
+~/OneDrive/GitHubShared/shadow-reagent-master(master*) » yarn release
+yarn run v1.10.1
+$ shadow-cljs release app;
+shadow-cljs - config: /Users/peterwen/OneDrive/GitHubShared/shadow-reagent-master/shadow-cljs.edn  cli version: 2.4.13  node: v10.11.0
+shadow-cljs - starting ...
+[:app] Compiling ...
+------ WARNING #1 --------------------------------------------------------------
+ File: firebase/app.cljs:1:14
+
+ constant firebase assigned a value more than once.
+Original definition at externs.shadow.js:4
+--------------------------------------------------------------------------------
+
+nil
+[:app] Build completed. (107 files, 70 compiled, 0 warnings, 22.30s)
+✨  Done in 34.98s.
+------------------------------------------------------------
+~/OneDrive/GitHubShared/shadow-reagent-master(master*) » yarn release
+yarn run v1.10.1
+$ shadow-cljs release app;
+shadow-cljs - config: /Users/peterwen/OneDrive/GitHubShared/shadow-reagent-master/shadow-cljs.edn  cli version: 2.4.13  node: v10.11.0
+shadow-cljs - starting ...
+[:app] Compiling ...
+------ WARNING #1 --------------------------------------------------------------
+ File: firebase/app.cljs:1:14
+
+ constant firebase assigned a value more than once.
+Original definition at externs.shadow.js:4
+--------------------------------------------------------------------------------
+
+nil
+[:app] Build completed. (107 files, 2 compiled, 0 warnings, 13.01s)
+✨  Done in 25.27s.
+------------------------------------------------------------
+~/OneDrive/GitHubShared/shadow-reagent-master(master*) » firebase serve
+
+=== Serving from '/Users/peterwen/OneDrive/GitHubShared/shadow-reagent-master'...
+
+i  hosting: Serving hosting files from: public
+✔  hosting: Local server: http://localhost:5000
+127.0.0.1 - - [06/Oct/2018:01:01:47 +0000] "GET / HTTP/1.1" 200 581 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36"
+127.0.0.1 - - [06/Oct/2018:01:01:47 +0000] "GET /css/style.css HTTP/1.1" 200 188 "http://localhost:5000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36"
+127.0.0.1 - - [06/Oct/2018:01:01:47 +0000] "GET /js/main.js HTTP/1.1" 200 1324734 "http://localhost:5000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36"
+^X^CShutting down...
+------------------------------------------------------------
+~/OneDrive/GitHubShared/shadow-reagent-master(master*) » firebase deploy
+
+=== Deploying to 'fir-test-ae558'...
+
+i  deploying hosting
+i  hosting[fir-test-ae558]: beginning deploy...
+i  hosting[fir-test-ae558]: found 376 files in public
+✔  hosting[fir-test-ae558]: file upload complete
+i  hosting[fir-test-ae558]: finalizing version...
+✔  hosting[fir-test-ae558]: version finalized
+i  hosting[fir-test-ae558]: releasing new version...
+✔  hosting[fir-test-ae558]: release complete
+
+✔  Deploy complete!
+
+Project Console: https://console.firebase.google.com/project/fir-test-ae558/overview
+Hosting URL: https://fir-test-ae558.firebaseapp.com
+------------------------------------------------------------
+~/OneDrive/GitHubShared/shadow-reagent-master(master*) » yarn dev
+yarn run v1.10.1
+$ shadow-cljs watch app;
+shadow-cljs - config: /Users/peterwen/OneDrive/GitHubShared/shadow-reagent-master/shadow-cljs.edn  cli version: 2.4.13  node: v10.11.0
+shadow-cljs - updating dependencies
+shadow-cljs - dependencies updated
+shadow-cljs - starting ...
+shadow-cljs - HTTP server for :app available at http://localhost:3000
+shadow-cljs - server version: 2.4.13
+shadow-cljs - server running at http://localhost:9630
+shadow-cljs - socket REPL running on port 51265
+shadow-cljs - nREPL server started on port 3333
+shadow-cljs - watching build :app
+[:app] Configuring build.
+[:app] Compiling ...
+[:app] Build failure:
+The required JS dependency "semantic-ui-react/dist/es/index.js" is not available, it was required by "cljsjs/semantic_ui_react.cljs".
+
+Searched in:/Users/peterwen/OneDrive/GitHubShared/shadow-reagent-master/node_modules
+
+You probably need to run:
+  npm install semantic-ui-react/dist/es/index.js
+
+See: https://shadow-cljs.github.io/docs/UsersGuide.html#npm-install
+
+^Cshutting down ...
+
+------------------------------------------------------------
+~/OneDrive/GitHubShared/shadow-reagent-master(master*) » Worker shutdown.s-iMac
+shutdown complete.                                                              yarn add semantic-ui-reactt
+yarn add v1.10.1
+warning package-lock.json found. Your project contains lock files generated by tools other than Yarn. It is advised not to mix package managers in order to avoid resolution inconsistencies caused by unsynchronized lock files. To clear this warning, remove package-lock.json.
+[1/4] 🔍  Resolving packages...
+[2/4] 🚚  Fetching packages...
+[3/4] 🔗  Linking dependencies...
+warning "@firebase/auth > @firebase/auth-types@0.3.4" has unmet peer dependency "@firebase/app-types@0.x".
+warning " > @firebase/database@0.3.6" has unmet peer dependency "@firebase/app-types@0.x".
+warning "@firebase/database > @firebase/database-types@0.3.2" has unmet peer dependency "@firebase/app-types@0.x".
+warning " > @firebase/firestore@0.8.3" has unmet peer dependency "@firebase/app-types@0.x".
+warning "@firebase/firestore > @firebase/firestore-types@0.7.0" has unmet peer dependency "@firebase/app-types@0.x".
+[4/4] 📃  Building fresh packages...
+success Saved lockfile.
+success Saved 81 new dependencies.
+info Direct dependencies
+├─ @firebase/app@0.3.4
+├─ @firebase/auth@0.7.7
+├─ @firebase/database@0.3.6
+├─ @firebase/firestore@0.8.3
+└─ semantic-ui-react@0.82.5
+info All dependencies
+├─ @babel/runtime@7.1.2
+├─ @firebase/app-types@0.3.2
+├─ @firebase/app@0.3.4
+├─ @firebase/auth-types@0.3.4
+├─ @firebase/auth@0.7.7
+├─ @firebase/database-types@0.3.2
+├─ @firebase/database@0.3.6
+├─ @firebase/firestore-types@0.7.0
+├─ @firebase/firestore@0.8.3
+├─ @firebase/webchannel-wrapper@0.2.10
+├─ @semantic-ui-react/event-stack@2.0.0
+├─ abbrev@1.1.1
+├─ aproba@1.2.0
+├─ are-we-there-yet@1.1.5
+├─ ascli@1.0.1
+├─ bytebuffer@5.0.1
+├─ camelcase@2.1.1
+├─ chownr@1.1.1
+├─ classnames@2.2.6
+├─ cliui@3.2.0
+├─ code-point-at@1.1.0
+├─ colour@0.7.1
+├─ console-control-strings@1.1.0
+├─ debug@2.6.9
+├─ decamelize@1.2.0
+├─ deep-extend@0.6.0
+├─ delegates@1.0.0
+├─ detect-libc@1.0.3
+├─ dom-storage@2.1.0
+├─ exenv@1.2.2
+├─ faye-websocket@0.11.1
+├─ fs-minipass@1.2.5
+├─ fs.realpath@1.0.0
+├─ gauge@2.7.4
+├─ grpc@1.13.1
+├─ has-unicode@2.0.1
+├─ http-parser-js@0.4.13
+├─ iconv-lite@0.4.24
+├─ ignore-walk@3.0.1
+├─ inflight@1.0.6
+├─ inherits@2.0.3
+├─ ini@1.3.5
+├─ invert-kv@1.0.0
+├─ is-fullwidth-code-point@1.0.0
+├─ keyboard-key@1.0.2
+├─ lcid@1.0.0
+├─ long@3.2.0
+├─ minizlib@1.1.0
+├─ nan@2.11.1
+├─ needle@2.2.4
+├─ node-pre-gyp@0.10.3
+├─ nopt@4.0.1
+├─ npm-bundled@1.0.5
+├─ npm-packlist@1.1.11
+├─ npmlog@4.1.2
+├─ optjs@3.2.2
+├─ os-locale@1.4.0
+├─ os-tmpdir@1.0.2
+├─ osenv@0.1.5
+├─ path-is-absolute@1.0.1
+├─ protobufjs@5.0.3
+├─ rc@1.2.8
+├─ regenerator-runtime@0.12.1
+├─ rimraf@2.6.2
+├─ safer-buffer@2.1.2
+├─ sax@1.2.4
+├─ semantic-ui-react@0.82.5
+├─ set-blocking@2.0.0
+├─ shallowequal@1.1.0
+├─ signal-exit@3.0.2
+├─ strip-json-comments@2.0.1
+├─ tar@4.4.6
+├─ websocket-driver@0.7.0
+├─ websocket-extensions@0.1.3
+├─ wide-align@1.1.3
+├─ window-size@0.1.4
+├─ wrap-ansi@2.1.0
+├─ xmlhttprequest@1.8.0
+├─ y18n@3.2.1
+├─ yallist@3.0.2
+└─ yargs@3.32.0
+✨  Done in 21.18s.
+------------------------------------------------------------
+~/OneDrive/GitHubShared/shadow-reagent-master(master*) » yarn dev
+yarn run v1.10.1
+$ shadow-cljs watch app;
+shadow-cljs - config: /Users/peterwen/OneDrive/GitHubShared/shadow-reagent-master/shadow-cljs.edn  cli version: 2.4.13  node: v10.11.0
+shadow-cljs - starting ...
+shadow-cljs - HTTP server for :app available at http://localhost:3000
+shadow-cljs - server version: 2.4.13
+shadow-cljs - server running at http://localhost:9630
+shadow-cljs - socket REPL running on port 51933
+shadow-cljs - nREPL server started on port 3333
+shadow-cljs - watching build :app
+[:app] Configuring build.
+[:app] Compiling ...
+[:app] Build completed. (931 files, 734 compiled, 0 warnings, 29.48s)
+JS runtime connected.
+^Cshutting down ...
+
+JS runtime disconnected.
+------------------------------------------------------------
+~/OneDrive/GitHubShared/shadow-reagent-master(master*) » Worker shutdown.s-iMac
+shutdown complete.
+
+------------------------------------------------------------
+~/OneDrive/GitHubShared/shadow-reagent-master(master*) » firebase deploy
+
+=== Deploying to 'fir-test-ae558'...
+
+i  deploying hosting
+i  hosting[fir-test-ae558]: beginning deploy...
+i  hosting[fir-test-ae558]: found 1743 files in public
+⠼  hosting: uploading new files [1410/1411] (99%)^C
+------------------------------------------------------------
+~/OneDrive/GitHubShared/shadow-reagent-master(master*) » firebase deploy
+
+=== Deploying to 'fir-test-ae558'...
+
+i  deploying hosting
+i  hosting[fir-test-ae558]: beginning deploy...
+i  hosting[fir-test-ae558]: found 1743 files in public
+✔  hosting[fir-test-ae558]: file upload complete
+i  hosting[fir-test-ae558]: finalizing version...
+✔  hosting[fir-test-ae558]: version finalized
+i  hosting[fir-test-ae558]: releasing new version...
+✔  hosting[fir-test-ae558]: release complete
+
+✔  Deploy complete!
+
+Project Console: https://console.firebase.google.com/project/fir-test-ae558/overview
+Hosting URL: https://fir-test-ae558.firebaseapp.com
+------------------------------------------------------------
+~/OneDrive/GitHubShared/shadow-reagent-master(master*) » yarn release
+yarn run v1.10.1
+$ shadow-cljs release app;
+shadow-cljs - config: /Users/peterwen/OneDrive/GitHubShared/shadow-reagent-master/shadow-cljs.edn  cli version: 2.4.13  node: v10.11.0
+shadow-cljs - starting ...
+[:app] Compiling ...
+WARNING: You required cljs-devtools library in a project which is currently compiled with :optimizations :advanced.
+         You should remove this library from non-dev builds completely because it impedes dead code elimination.
+         The best way is to use :preloads compiler option: https://github.com/binaryage/cljs-devtools/blob/master/docs/installation.md#install-it-via-preloads.
+         To silence this warning please set :silence-optimizations-warning config key to true.
+         More details: https://github.com/binaryage/cljs-devtools/issues/37.WARNING: You required cljs-devtools library in a project which is currently compiled with :optimizations :advanced.
+         You should remove this library from non-dev builds completely because it impedes dead code elimination.
+         The best way is to use :preloads compiler option: https://github.com/binaryage/cljs-devtools/blob/master/docs/installation.md#install-it-via-preloads.
+         To silence this warning please set :silence-optimizations-warning config key to true.
+         More details: https://github.com/binaryage/cljs-devtools/issues/37.
+
+npm package "@semantic-ui-react/event-stack" expected version "prop-types@^15.6.2" but "15.6.0" is installed.
+npm package "semantic-ui-react" expected version "lodash@^4.17.10" but "4.17.4" is installed.
+npm package "semantic-ui-react" expected version "prop-types@^15.6.2" but "15.6.0" is installed.
+------ WARNING #1 --------------------------------------------------------------
+ File: firebase/app.cljs:1:14
+
+ constant firebase assigned a value more than once.
+Original definition at externs.shadow.js:8
+--------------------------------------------------------------------------------
+
+nil
+[:app] Build completed. (871 files, 756 compiled, 0 warnings, 46.35s)
+✨  Done in 68.67s.
+------------------------------------------------------------
+~/OneDrive/GitHubShared/shadow-reagent-master(master*) » firebase serve                                 peterwen@Peters-iMac
+
+=== Serving from '/Users/peterwen/OneDrive/GitHubShared/shadow-reagent-master'...
+
+i  hosting: Serving hosting files from: public
+✔  hosting: Local server: http://localhost:5000
+127.0.0.1 - - [06/Oct/2018:01:30:48 +0000] "GET / HTTP/1.1" 200 581 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36"
+127.0.0.1 - - [06/Oct/2018:01:30:48 +0000] "GET /css/style.css HTTP/1.1" 200 188 "http://localhost:5000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36"
+127.0.0.1 - - [06/Oct/2018:01:30:49 +0000] "GET /js/main.js HTTP/1.1" 200 2179577 "http://localhost:5000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36"
+^CShutting down...
+------------------------------------------------------------
+~/OneDrive/GitHubShared/shadow-reagent-master(master*) » yarn release                                   peterwen@Peters-iMac
+yarn run v1.10.1
+$ shadow-cljs release app;
+shadow-cljs - config: /Users/peterwen/OneDrive/GitHubShared/shadow-reagent-master/shadow-cljs.edn  cli version: 2.4.13  node: v10.11.0
+shadow-cljs - starting ...
+[:app] Compiling ...
+npm package "@semantic-ui-react/event-stack" expected version "prop-types@^15.6.2" but "15.6.0" is installed.
+npm package "semantic-ui-react" expected version "lodash@^4.17.10" but "4.17.4" is installed.
+npm package "semantic-ui-react" expected version "prop-types@^15.6.2" but "15.6.0" is installed.
+[:app] Build completed. (871 files, 0 compiled, 0 warnings, 10.92s)
+✨  Done in 33.30s.
+------------------------------------------------------------
+~/OneDrive/GitHubShared/shadow-reagent-master(master*) » firebase serve                                 peterwen@Peters-iMac
+
+=== Serving from '/Users/peterwen/OneDrive/GitHubShared/shadow-reagent-master'...
+
+i  hosting: Serving hosting files from: public
+✔  hosting: Local server: http://localhost:5000
+127.0.0.1 - - [06/Oct/2018:01:33:12 +0000] "GET / HTTP/1.1" 200 581 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36"
+127.0.0.1 - - [06/Oct/2018:01:33:12 +0000] "GET /css/style.css HTTP/1.1" 200 188 "http://localhost:5000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36"
+127.0.0.1 - - [06/Oct/2018:01:33:13 +0000] "GET /js/main.js HTTP/1.1" 200 7011849 "http://localhost:5000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36"
+127.0.0.1 - - [06/Oct/2018:01:33:16 +0000] "GET / HTTP/1.1" 200 581 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36"
+^X^CShutting down...
+------------------------------------------------------------
+~/OneDrive/GitHubShared/shadow-reagent-master(master*) » yarn release                                   peterwen@Peters-iMac
+yarn run v1.10.1
+$ shadow-cljs release app;
+shadow-cljs - config: /Users/peterwen/OneDrive/GitHubShared/shadow-reagent-master/shadow-cljs.edn  cli version: 2.4.13  node: v10.11.0
+shadow-cljs - starting ...
+[:app] Compiling ...
+npm package "@semantic-ui-react/event-stack" expected version "prop-types@^15.6.2" but "15.6.0" is installed.
+npm package "semantic-ui-react" expected version "lodash@^4.17.10" but "4.17.4" is installed.
+npm package "semantic-ui-react" expected version "prop-types@^15.6.2" but "15.6.0" is installed.
+------ WARNING #1 --------------------------------------------------------------
+ File: firebase/app.cljs:1:14
+
+ constant firebase assigned a value more than once.
+Original definition at externs.shadow.js:8
+--------------------------------------------------------------------------------
+
+nil
+[:app] Build completed. (871 files, 0 compiled, 0 warnings, 24.62s)
+✨  Done in 46.00s.
+------------------------------------------------------------
+~/OneDrive/GitHubShared/shadow-reagent-master(master*) » firebase serve                                 peterwen@Peters-iMac
+
+=== Serving from '/Users/peterwen/OneDrive/GitHubShared/shadow-reagent-master'...
+
+i  hosting: Serving hosting files from: public
+✔  hosting: Local server: http://localhost:5000
+127.0.0.1 - - [06/Oct/2018:01:38:19 +0000] "GET / HTTP/1.1" 200 581 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36"
+127.0.0.1 - - [06/Oct/2018:01:38:19 +0000] "GET /js/main.js HTTP/1.1" 200 5663948 "http://localhost:5000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36"
+^X^CShutting down...
+------------------------------------------------------------
+~/OneDrive/GitHubShared/shadow-reagent-master(master*) » yarn release                                   peterwen@Peters-iMac
+yarn run v1.10.1
+$ shadow-cljs release app;
+shadow-cljs - config: /Users/peterwen/OneDrive/GitHubShared/shadow-reagent-master/shadow-cljs.edn  cli version: 2.4.13  node: v10.11.0
+shadow-cljs - starting ...
+[:app] Compiling ...
+npm package "@semantic-ui-react/event-stack" expected version "prop-types@^15.6.2" but "15.6.0" is installed.
+npm package "semantic-ui-react" expected version "lodash@^4.17.10" but "4.17.4" is installed.
+npm package "semantic-ui-react" expected version "prop-types@^15.6.2" but "15.6.0" is installed.
+------ WARNING #1 --------------------------------------------------------------
+ File: firebase/app.cljs:1:14
+
+ constant firebase assigned a value more than once.
+Original definition at externs.shadow.js:8
+--------------------------------------------------------------------------------
+
+nil
+[:app] Build completed. (871 files, 0 compiled, 0 warnings, 23.59s)
+✨  Done in 47.42s.
+------------------------------------------------------------
+~/OneDrive/GitHubShared/shadow-reagent-master(master*) » yarn release                                   peterwen@Peters-iMac
+yarn run v1.10.1
+$ shadow-cljs release app;
+shadow-cljs - config: /Users/peterwen/OneDrive/GitHubShared/shadow-reagent-master/shadow-cljs.edn  cli version: 2.4.13  node: v10.11.0
+shadow-cljs - starting ...
+[:app] Compiling ...
+npm package "@semantic-ui-react/event-stack" expected version "prop-types@^15.6.2" but "15.6.0" is installed.
+npm package "semantic-ui-react" expected version "lodash@^4.17.10" but "4.17.4" is installed.
+npm package "semantic-ui-react" expected version "prop-types@^15.6.2" but "15.6.0" is installed.
+[:app] Build completed. (871 files, 0 compiled, 0 warnings, 13.04s)
+✨  Done in 34.25s.
+------------------------------------------------------------
+~/OneDrive/GitHubShared/shadow-reagent-master(master*) » firebase serve                                 peterwen@Peters-iMac
+
+=== Serving from '/Users/peterwen/OneDrive/GitHubShared/shadow-reagent-master'...
+
+i  hosting: Serving hosting files from: public
+✔  hosting: Local server: http://localhost:5000
+127.0.0.1 - - [06/Oct/2018:01:46:03 +0000] "GET / HTTP/1.1" 200 581 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36"
+127.0.0.1 - - [06/Oct/2018:01:46:03 +0000] "GET /js/main.js HTTP/1.1" 200 7011849 "http://localhost:5000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36"
+^CShutting down...
+------------------------------------------------------------
+~/OneDrive/GitHubShared/shadow-reagent-master(master*) » shadow-cljs release app                        peterwen@Peters-iMac
+shadow-cljs - config: /Users/peterwen/OneDrive/GitHubShared/shadow-reagent-master/shadow-cljs.edn  cli version: 2.4.13  node: v10.11.0
+shadow-cljs - starting ...
+[:app] Compiling ...
+npm package "@semantic-ui-react/event-stack" expected version "prop-types@^15.6.2" but "15.6.0" is installed.
+npm package "semantic-ui-react" expected version "lodash@^4.17.10" but "4.17.4" is installed.
+npm package "semantic-ui-react" expected version "prop-types@^15.6.2" but "15.6.0" is installed.
+[:app] Build completed. (871 files, 0 compiled, 0 warnings, 10.97s)
+------------------------------------------------------------
+~/OneDrive/GitHubShared/shadow-reagent-master(master*) » shadow-cljs release app                        peterwen@Peters-iMac
+shadow-cljs - config: /Users/peterwen/OneDrive/GitHubShared/shadow-reagent-master/shadow-cljs.edn  cli version: 2.4.13  node: v10.11.0
+shadow-cljs - starting ...
+[:app] Compiling ...
+npm package "@semantic-ui-react/event-stack" expected version "prop-types@^15.6.2" but "15.6.0" is installed.
+npm package "semantic-ui-react" expected version "lodash@^4.17.10" but "4.17.4" is installed.
+npm package "semantic-ui-react" expected version "prop-types@^15.6.2" but "15.6.0" is installed.
+[:app] Build completed. (871 files, 0 compiled, 0 warnings, 9.41s)
+------------------------------------------------------------
+~/OneDrive/GitHubShared/shadow-reagent-master(master*) » firebase init                                  peterwen@Peters-iMac
+
+     🔥🔥🔥🔥🔥🔥🔥🔥 🔥🔥🔥🔥 🔥🔥🔥🔥🔥🔥🔥🔥  🔥🔥🔥🔥🔥🔥🔥🔥 🔥🔥🔥🔥🔥🔥🔥🔥     🔥🔥🔥     🔥🔥🔥🔥🔥🔥  🔥🔥🔥🔥🔥🔥🔥🔥
+     🔥🔥        🔥🔥  🔥🔥     🔥🔥 🔥🔥       🔥🔥     🔥🔥  🔥🔥   🔥🔥  🔥🔥       🔥🔥
+     🔥🔥🔥🔥🔥🔥    🔥🔥  🔥🔥🔥🔥🔥🔥🔥🔥  🔥🔥🔥🔥🔥🔥   🔥🔥🔥🔥🔥🔥🔥🔥  🔥🔥🔥🔥🔥🔥🔥🔥🔥  🔥🔥🔥🔥🔥🔥  🔥🔥🔥🔥🔥🔥
+     🔥🔥        🔥🔥  🔥🔥    🔥🔥  🔥🔥       🔥🔥     🔥🔥 🔥🔥     🔥🔥       🔥🔥 🔥🔥
+     🔥🔥       🔥🔥🔥🔥 🔥🔥     🔥🔥 🔥🔥🔥🔥🔥🔥🔥🔥 🔥🔥🔥🔥🔥🔥🔥🔥  🔥🔥     🔥🔥  🔥🔥🔥🔥🔥🔥  🔥🔥🔥🔥🔥🔥🔥🔥
+
+You're about to initialize a Firebase project in this directory:
+
+  /Users/peterwen/OneDrive/GitHubShared/shadow-reagent-master
+
+Before we get started, keep in mind:
+
+  * You are initializing in an existing Firebase project directory
+
+? Which Firebase CLI features do you want to setup for this folder? Press Space to select features, then Enter to confirm you
+r choices. Hosting: Configure and deploy Firebase Hosting sites
+
+=== Project Setup
+
+First, let's associate this project directory with a Firebase project.
+You can create multiple project aliases by running firebase use --add,
+but for now we'll just set up a default project.
+
+i  .firebaserc already has a default project, skipping
+
+=== Hosting Setup
+
+Your public directory is the folder (relative to your project directory) that
+will contain Hosting assets to be uploaded with firebase deploy. If you
+have a build process for your assets, use your build's output directory.
+
+? What do you want to use as your public directory? production
+? Configure as a single-page app (rewrite all urls to /index.html)? No
+✔  Wrote production/404.html
+✔  Wrote production/index.html
+
+i  Writing configuration info to firebase.json...
+i  Writing project information to .firebaserc...
+
+✔  Firebase initialization complete!
+------------------------------------------------------------
+~/OneDrive/GitHubShared/shadow-reagent-master(master*) » firebase serve                                 peterwen@Peters-iMac
+
+=== Serving from '/Users/peterwen/OneDrive/GitHubShared/shadow-reagent-master'...
+
+i  hosting: Serving hosting files from: production
+✔  hosting: Local server: http://localhost:5000
+127.0.0.1 - - [06/Oct/2018:02:08:01 +0000] "GET /js/main.js HTTP/1.1" 200 7011849 "http://localhost:5000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36"
+^CShutting down...
+------------------------------------------------------------
+~/OneDrive/GitHubShared/shadow-reagent-master(master*) » shadow-cljs check app                          peterwen@Peters-iMac
+shadow-cljs - config: /Users/peterwen/OneDrive/GitHubShared/shadow-reagent-master/shadow-cljs.edn  cli version: 2.4.13  node: v10.11.0
+shadow-cljs - starting ...
+WARNING: You required cljs-devtools library in a project which is currently compiled with :optimizations :whitespace.
+         You should remove this library from non-dev builds completely because it impedes dead code elimination.
+         The best way is to use :preloads compiler option: https://github.com/binaryage/cljs-devtools/blob/master/docs/installation.md#install-it-via-preloads.
+         To silence this warning please set :silence-optimizations-warning config key to true.
+         More details: https://github.com/binaryage/cljs-devtools/issues/37.
+npm package "@semantic-ui-react/event-stack" expected version "prop-types@^15.6.2" but "15.6.0" is installed.
+npm package "semantic-ui-react" expected version "lodash@^4.17.10" but "4.17.4" is installed.
+npm package "semantic-ui-react" expected version "prop-types@^15.6.2" but "15.6.0" is installed.
+[:app] Build completed. (871 files, 780 compiled, 0 warnings, 34.12s)
+------------------------------------------------------------
+~/OneDrive/GitHubShared/shadow-reagent-master(master*) » shadow-cljs release app                        peterwen@Peters-iMac
+shadow-cljs - error failed reading config file: /Users/peterwen/OneDrive/GitHubShared/shadow-reagent-master/shadow-cljs.edn
+------------------------------------------------------------
+~/OneDrive/GitHubShared/shadow-reagent-master(master*) » shadow-cljs release app                        peterwen@Peters-iMac
+shadow-cljs - error failed reading config file: /Users/peterwen/OneDrive/GitHubShared/shadow-reagent-master/shadow-cljs.edn
+------------------------------------------------------------
+~/OneDrive/GitHubShared/shadow-reagent-master(master*) » shadow-cljs release app                        peterwen@Peters-iMac
+shadow-cljs - error failed reading config file: /Users/peterwen/OneDrive/GitHubShared/shadow-reagent-master/shadow-cljs.edn
+------------------------------------------------------------
+~/OneDrive/GitHubShared/shadow-reagent-master(master*) » shadow-cljs release app                        peterwen@Peters-iMac
+shadow-cljs - config: /Users/peterwen/OneDrive/GitHubShared/shadow-reagent-master/shadow-cljs.edn  cli version: 2.4.13  node: v10.11.0
+shadow-cljs - starting ...
+^C%                                                                                                                          ------------------------------------------------------------
+~/OneDrive/GitHubShared/shadow-reagent-master(master*) » shadow-cljs release app                        peterwen@Peters-iMac
+shadow-cljs - error failed reading config file: /Users/peterwen/OneDrive/GitHubShared/shadow-reagent-master/shadow-cljs.edn
+------------------------------------------------------------
+~/OneDrive/GitHubShared/shadow-reagent-master(master*) » shadow-cljs release app                        peterwen@Peters-iMac
+shadow-cljs - config: /Users/peterwen/OneDrive/GitHubShared/shadow-reagent-master/shadow-cljs.edn  cli version: 2.4.13  node: v10.11.0
+shadow-cljs - starting ...
+[:app] Compiling ...
+WARNING: You required cljs-devtools library in a project which is currently compiled with :optimizations :simple.
+         You should remove this library from non-dev builds completely because it impedes dead code elimination.
+         The best way is to use :preloads compiler option: https://github.com/binaryage/cljs-devtools/blob/master/docs/installation.md#install-it-via-preloads.
+         To silence this warning please set :silence-optimizations-warning config key to true.
+         More details: https://github.com/binaryage/cljs-devtools/issues/37.
+npm package "@semantic-ui-react/event-stack" expected version "prop-types@^15.6.2" but "15.6.0" is installed.
+npm package "semantic-ui-react" expected version "lodash@^4.17.10" but "4.17.4" is installed.
+npm package "semantic-ui-react" expected version "prop-types@^15.6.2" but "15.6.0" is installed.
+------ WARNING #1 --------------------------------------------------------------
+ File: firebase/app.cljs:1:14
+
+ constant firebase assigned a value more than once.
+Original definition at externs.shadow.js:8
+--------------------------------------------------------------------------------
+
+nil
+[:app] Build completed. (871 files, 128 compiled, 0 warnings, 37.35s)
+------------------------------------------------------------
+~/OneDrive/GitHubShared/shadow-reagent-master(master*) » shadow-cljs release app --debug                peterwen@Peters-iMac
+shadow-cljs - config: /Users/peterwen/OneDrive/GitHubShared/shadow-reagent-master/shadow-cljs.edn  cli version: 2.4.13  node: v10.11.0
+shadow-cljs - starting ...
+[:app] Compiling ...
+WARNING: You required cljs-devtools library in a project which is currently compiled with :optimizations :simple.
+         You should remove this library from non-dev builds completely because it impedes dead code elimination.
+         The best way is to use :preloads compiler option: https://github.com/binaryage/cljs-devtools/blob/master/docs/installation.md#install-it-via-preloads.
+         To silence this warning please set :silence-optimizations-warning config key to true.
+         More details: https://github.com/binaryage/cljs-devtools/issues/37.WARNING: You required cljs-devtools library in a project which is currently compiled with :optimizations :simple.
+         You should remove this library from non-dev builds completely because it impedes dead code elimination.
+         The best way is to use :preloads compiler option: https://github.com/binaryage/cljs-devtools/blob/master/docs/installation.md#install-it-via-preloads.
+         To silence this warning please set :silence-optimizations-warning config key to true.
+         More details: https://github.com/binaryage/cljs-devtools/issues/37.
+
+npm package "@semantic-ui-react/event-stack" expected version "prop-types@^15.6.2" but "15.6.0" is installed.
+npm package "semantic-ui-react" expected version "lodash@^4.17.10" but "4.17.4" is installed.
+npm package "semantic-ui-react" expected version "prop-types@^15.6.2" but "15.6.0" is installed.
+------ WARNING #1 --------------------------------------------------------------
+ File: firebase/app.cljs:1:14
+
+ constant firebase assigned a value more than once.
+Original definition at externs.shadow.js:8
+--------------------------------------------------------------------------------
+
+nil
+[:app] Build completed. (871 files, 128 compiled, 0 warnings, 38.95s)
+------------------------------------------------------------
+~/OneDrive/GitHubShared/shadow-reagent-master(master*) » shadow-cljs release app --debug                peterwen@Peters-iMac
+shadow-cljs - config: /Users/peterwen/OneDrive/GitHubShared/shadow-reagent-master/shadow-cljs.edn  cli version: 2.4.13  node: v10.11.0
+shadow-cljs - updating dependencies
+shadow-cljs - dependencies updated
+shadow-cljs - starting ...
+[:app] Compiling ...
+The required namespace "devtools.core" is not available, it was required by "app/helpers/acctcalc.cljs".
+
+------------------------------------------------------------
+~/OneDrive/GitHubShared/shadow-reagent-master(master*) » shadow-cljs release app --debug                peterwen@Peters-iMac
+shadow-cljs - config: /Users/peterwen/OneDrive/GitHubShared/shadow-reagent-master/shadow-cljs.edn  cli version: 2.4.13  node: v10.11.0
+shadow-cljs - starting ...
+[:app] Compiling ...
+npm package "@semantic-ui-react/event-stack" expected version "prop-types@^15.6.2" but "15.6.0" is installed.
+npm package "semantic-ui-react" expected version "lodash@^4.17.10" but "4.17.4" is installed.
+npm package "semantic-ui-react" expected version "prop-types@^15.6.2" but "15.6.0" is installed.
+------ WARNING #1 --------------------------------------------------------------
+ File: firebase/app.cljs:1:14
+
+ constant firebase assigned a value more than once.
+Original definition at externs.shadow.js:6
+--------------------------------------------------------------------------------
+
+nil
+[:app] Build completed. (849 files, 4 compiled, 0 warnings, 23.87s)
+------------------------------------------------------------
+~/OneDrive/GitHubShared/shadow-reagent-master(no-devtools*) »                                                                                                                          peterwen@Peters-iMac

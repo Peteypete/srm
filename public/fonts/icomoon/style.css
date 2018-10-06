@@ -1,0 +1,41 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('fonts/icomoon.eot?7p3y2s');
+  src:  url('fonts/icomoon.eot?7p3y2s#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?7p3y2s') format('truetype'),
+    url('fonts/icomoon.woff?7p3y2s') format('woff'),
+    url('fonts/icomoon.svg?7p3y2s#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-1065:before {
+  content: "\e900";
+}
+.icon-1120:before {
+  content: "\e901";
+}
+.icon-1120S:before {
+  content: "\e902";
+}
+.icon-xero-logo:before {
+  content: "\78";
+}
+.icon-qbo-logo:before {
+  content: "\e906";
+}
